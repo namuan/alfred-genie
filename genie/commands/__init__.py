@@ -7,5 +7,5 @@ available_commands = [
     format_json_command,
     minify_json_command,
     base64_decode_command,
-    base64_encode_command
+    base64_encode_command,
 ]

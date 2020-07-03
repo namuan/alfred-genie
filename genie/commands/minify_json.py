@@ -19,7 +19,7 @@ class MinifyJsonCommand:
         input_from_clipboard = clipboard.paste()
         try:
             json_temp = json.loads(input_from_clipboard)
-            return json.dumps(json_temp, separators=(',', ':'))
+            return json.dumps(json_temp, separators=(",", ":"))
         except Exception as e:
             return "Error processing: {} - {}".format(input_from_clipboard, e)
 

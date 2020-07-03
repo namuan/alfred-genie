@@ -2,16 +2,41 @@
 
 Genie for Alfred
 
-### Installation
+![](docs/alfred-genie-intro.png)
+
+### Usage
+
+![](docs/alfred-genie-usage.gif)
+
+### Command Line Usage
 
 ```
 $ pip install alfred-genie
 ```
 
-### Usage
+Then the following commands will be available
 
-The following sub-commands are currently implemented
+```
+$ alfred-genie 
+Usage: alfred-genie [OPTIONS] COMMAND [ARGS]...
 
+Options:
+  --help  Show this message and exit.
+
+Commands:
+  base64-decode
+  base64-encode
+  commands # ignore this as this is only used from Alfred
+  format-json
+  minify-json
+```
+
+### Creating Alfred Workflow
+
+- [ ] Open workflow file in Alfred
+- [ ] Open workflow directory in Terminal
+- [ ] Install dependencies in workflow directory `pip install --target=. click`
+- [ ] Export workflow and publish to Github
 
 ### Contributing
 

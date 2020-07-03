@@ -3,7 +3,7 @@ import sys
 from datetime import datetime
 from setuptools import find_packages, setup
 
-dependencies = ['click']
+dependencies = ['click', 'clipboard']
 
 # 'setup.py publish-test' shortcut
 if sys.argv[-1] == 'publish-test':
@@ -31,13 +31,13 @@ except (IOError, ImportError, OSError) as e:
     long_description = open('README.md').read()
 
 setup(
-    name='twitter-utils',
-    version='0.2.' + version,
-    url='https://github.com/namuan/twitter-utils',
+    name='alfred-genie',
+    version='0.1.' + version,
+    url='https://github.com/namuan/alfred-genie',
     license='MIT',
     author='DeskRiders Dev',
     author_email='me@deskriders.dev',
-    description='Collection of twitter scripts',
+    description='Genie for Alfred',
     long_description=long_description,
     packages=find_packages(exclude=['tests']),
     include_package_data=True,
@@ -47,7 +47,7 @@ setup(
     install_requires=dependencies,
     entry_points={
         'console_scripts': [
-            'twitter-utils = twitils.main:cli',
+            'alfred-genie = genie.main:cli',
         ],
     },
     classifiers=[
