@@ -4,11 +4,13 @@ Genie for Alfred
 
 ![](docs/alfred-genie-intro.png)
 
-### Usage
+### Using from Alfred
+
+Install `Alfred Genie.alfredworkflow` in Alfred and use the `genie` command to use any available function.
 
 ![](docs/alfred-genie-usage.gif)
 
-### Command Line Usage
+### Using from Command line
 
 ```
 $ pip install alfred-genie
@@ -30,13 +32,6 @@ Commands:
   format-json
   minify-json
 ```
-
-### Creating Alfred Workflow
-
-- [ ] Open workflow file in Alfred
-- [ ] Open workflow directory in Terminal
-- [ ] Install dependencies in workflow directory `pip install --target=. click`
-- [ ] Export workflow and publish to Github
 
 ### Contributing
 
@@ -63,6 +58,16 @@ $ pip install -r requirements.txt
 ```
 $ python local_main.py ...
 ```
+
+### Creating Alfred Workflow
+
+For publishing it in workflow, we need to perform following additional steps
+
+- [ ] Open workflow file in Alfred
+- [ ] Open workflow directory in Terminal
+- [ ] Apply any changes from this directory to workflow directory
+- [ ] Install dependencies in workflow directory `pip install --target=. click`
+- [ ] Export workflow and publish to Github
 
 ### Publishing Updates to PyPi
 
