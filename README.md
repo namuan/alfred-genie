@@ -2,6 +2,8 @@
 
 Genie for Alfred
 
+[![GitHub license](https://img.shields.io/github/license/namuan/alfred-genie.svg)](https://github.com/namuan/alfred-genie/blob/master/LICENSE) [![Twitter Follow](https://img.shields.io/twitter/follow/deskriders_twt.svg?style=social&label=Follow)](https://twitter.com/deskriders_twt)
+
 ![](docs/alfred-genie-intro.png)
 
 ### Using from Alfred
