@@ -1,8 +1,6 @@
 import base64
 
-import clipboard
-
-from genie import uid
+from genie import uid, with_clip
 
 
 class Base64EncodeCommand:
@@ -15,8 +13,8 @@ class Base64EncodeCommand:
             subtitle="Encode Base64 text from Clipboard",
         )
 
-    def process(self):
-        input_from_clipboard = clipboard.paste()
+    @with_clip
+    def process(self, input_from_clipboard):
         try:
             return self.encode(input_from_clipboard)
         except Exception as e:

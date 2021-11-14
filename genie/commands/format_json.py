@@ -1,8 +1,6 @@
 import json
 
-import clipboard
-
-from genie import uid
+from genie import uid, with_clip
 
 
 class FormatJsonCommand:
@@ -15,8 +13,8 @@ class FormatJsonCommand:
             subtitle="Format JSON from Clipboard",
         )
 
-    def process(self):
-        input_from_clipboard = clipboard.paste()
+    @with_clip
+    def process(self, input_from_clipboard):
         try:
             json_temp = json.loads(input_from_clipboard)
             return json.dumps(json_temp, indent=4)
