@@ -2,7 +2,7 @@ import json
 
 import click
 
-from genie.commands import available_commands
+from genie.commands import available_commands, unformat_command
 from genie.commands import base64_decode_command
 from genie.commands import base64_encode_command
 from genie.commands import format_json_command
@@ -48,4 +48,10 @@ def base64_decode():
 @cli.command()
 def base64_encode():
     result = base64_encode_command.process()
+    click.echo(result, nl=False)
+
+
+@cli.command()
+def unformat():
+    result = unformat_command.process()
     click.echo(result, nl=False)
