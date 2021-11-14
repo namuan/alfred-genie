@@ -70,7 +70,7 @@ For publishing it in workflow, we need to perform following additional steps
 - [ ] Apply any changes from this directory to workflow directory
 - [ ] Use [SourceGear diffmerge](https://sourcegear.com/diffmerge/) to compare and apply any changes
 ```
-$ diffmerge ~/workspace/alfred-genie/ <Alfred-installation-dir>/Alfred.alfredpreferences/workflows/user.workflow.2DE0ED2C-C508-479F-B474-693336E59251/
+$ diffmerge ~/workspace/alfred-genie/ `pwd`/
 ```
 - [ ] Install any dependencies in workflow directory `pip install --target=. click`
 - [ ] Export workflow and publish to Github
